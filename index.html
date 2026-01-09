@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WanderLux Travel Agency - personalised holiday planning, guided tours, and custom travel packages." />
+  <title>WanderLux Travel Agency | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>WanderLux</span>
+        </a>
+
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navLinks">
+          Menu
+        </button>
+
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="services.html">Destinations/Services</a>
+          <a href="calculator.html">Trip Cost Calculator</a>
+          <a href="appointment.html">Appointment Request</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card reveal">
+          <div class="tag" aria-label="Agency tagline">✨ Personalised travel planning</div>
+          <h1>Plan smarter trips with curated packages and local expertise.</h1>
+          <p>
+            WanderLux Travel Agency helps you design domestic and international holidays—guided tours,
+            flights & hotels, honeymoon specials, and custom itineraries tailored to your budget and style.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="calculator.html">Estimate trip cost</a>
+            <a class="btn" href="services.html">Explore services</a>
+          </div>
+
+          <div class="section" style="padding-bottom:0;">
+            <div class="grid grid-3">
+              <div class="card reveal">
+                <h3>Holiday Packages</h3>
+                <p>Pre-built itineraries with flexible upgrades.</p>
+              </div>
+              <div class="card reveal">
+                <h3>Guided Tours</h3>
+                <p>Small-group experiences with trusted partners.</p>
+              </div>
+              <div class="card reveal">
+                <h3>Flights & Hotels</h3>
+                <p>Convenient bundles and value comparisons.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="banner reveal" aria-label="Featured destinations rotating banner">
+          <img data-banner-img src="assets/hero1.jpg" alt="Featured destination image" />
+          <div class="banner-overlay">
+            <div class="banner-title" data-banner-title>Featured</div>
+            <div class="banner-sub" data-banner-sub>Rotating destination highlights</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Popular travel packages</h2>
+        <p class="lead reveal">A few favourites—customise any package with your consultant.</p>
+
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <h3>Bali Wellness Escape</h3>
+            <p>Beach stays, spa sessions, and cultural day trips.</p>
+            <ul class="list">
+              <li>Recommended for couples and friends</li>
+              <li>Standard or Luxury options</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Tokyo Food & Culture</h3>
+            <p>City tours, markets, temples, and rail day trips.</p>
+            <ul class="list">
+              <li>Great for first-time visitors</li>
+              <li>Guided tours available</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3>Swiss Alps Scenic Rail</h3>
+            <p>Mountain villages, panoramic trains, and hikes.</p>
+            <ul class="list">
+              <li>Ideal for nature lovers</li>
+              <li>Seasonal itineraries</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card reveal">
+          <h2>Ready to plan?</h2>
+          <p class="lead">Request an appointment and tell us what you want from your next trip.</p>
+          <a class="btn btn-primary" href="appointment.html">Request appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0 0 6px;">
+        © <span id="year"></span> WanderLux Travel Agency. All rights reserved.
+      </p>
+      <p style="margin:0;">
+        <a href="contact.html">Contact</a> · <a href="services.html">Services</a> · <a href="calculator.html">Calculator</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
