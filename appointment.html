@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Request an appointment with a WanderLux travel consultant." />
+  <title>WanderLux | Appointment Request</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>WanderLux</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navLinks">Menu</button>
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="services.html">Destinations/Services</a>
+          <a href="calculator.html">Trip Cost Calculator</a>
+          <a href="appointment.html">Appointment Request</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal" style="margin:0 0 8px;">Appointment Request</h1>
+        <p class="lead reveal">Request a call or meeting with a travel consultant.</p>
+
+        <div class="grid grid-2">
+          <div class="card reveal">
+            <h2 style="margin-top:0;">Request form</h2>
+
+            <!-- This form can be handled by Netlify Forms if deployed on Netlify -->
+            <form id="appointmentForm" class="form" name="appointment" method="POST" data-netlify="true" novalidate>
+              <input type="hidden" name="form-name" value="appointment" />
+
+              <div class="field">
+                <label for="apptName">Name</label>
+                <input id="apptName" name="name" type="text" autocomplete="name" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="apptEmail">Email</label>
+                <input id="apptEmail" name="email" type="email" autocomplete="email" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="apptPhone">Phone</label>
+                <input id="apptPhone" name="phone" type="tel" autocomplete="tel" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="apptDate">Preferred Date</label>
+                <input id="apptDate" name="date" type="date" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="apptMessage">Message</label>
+                <textarea id="apptMessage" name="message" required placeholder="Tell us your destination, travellers, duration, and any preferences."></textarea>
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Submit request</button>
+              <p class="help">If hosted on Netlify, this form can be captured without a backend (Netlify Forms).</p>
+            </form>
+          </div>
+
+          <aside class="card reveal">
+            <h2 style="margin-top:0;">What happens next?</h2>
+            <ul class="list">
+              <li>We review your request within 1 business day.</li>
+              <li>A consultant contacts you to confirm details.</li>
+              <li>We provide options and a refined quote.</li>
+            </ul>
+
+            <div class="notice" style="margin-top:14px;">
+              Want an estimate first? Use our <a href="calculator.html" style="text-decoration:underline;">Trip Cost Calculator</a>.
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0;">© <span id="year"></span> WanderLux Travel Agency.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script src="./js/forms.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact WanderLux Travel Agency. Send us a message directly from the website." />
+  <title>WanderLux | Contact</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>WanderLux</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navLinks">Menu</button>
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="services.html">Destinations/Services</a>
+          <a href="calculator.html">Trip Cost Calculator</a>
+          <a href="appointment.html">Appointment Request</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal" style="margin:0 0 8px;">Contact</h1>
+        <p class="lead reveal">Get in touch — message us directly from the website.</p>
+
+        <div class="grid grid-2">
+          <div class="card reveal">
+            <h2 style="margin-top:0;">Our details</h2>
+            <p><strong>Address:</strong> 100 Collins Street, Melbourne VIC (Example)</p>
+            <p><strong>Phone:</strong> +61 3 0000 0000</p>
+            <p><strong>Email:</strong> hello@wanderlux.example</p>
+
+            <div class="card reveal">
+              <h3 style="margin-top:0;">Map</h3>
+              <!-- Accessible embedded map (example) -->
+              <iframe
+                title="WanderLux office location map"
+                width="100%"
+                height="260"
+                style="border:0; border-radius: 14px;"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Collins%20Street%20Melbourne&output=embed">
+              </iframe>
+              <p class="help">If embedding is blocked on your hosting, include a link to Google Maps instead.</p>
+            </div>
+          </div>
+
+          <div class="card reveal">
+            <h2 style="margin-top:0;">Send a message</h2>
+
+            <div id="contactStatus" class="notice warn" hidden></div>
+
+            <!-- EmailJS keys go in data attributes below -->
+            <form id="contactForm" class="form" novalidate
+              data-emailjs-public-key=""
+              data-emailjs-service-id=""
+              data-emailjs-template-id="">
+
+              <div class="field">
+                <label for="cName">Name</label>
+                <input id="cName" name="name" type="text" autocomplete="name" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="cEmail">Email</label>
+                <input id="cEmail" name="email" type="email" autocomplete="email" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="cSubject">Subject</label>
+                <input id="cSubject" name="subject" type="text" required />
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <div class="field">
+                <label for="cMessage">Message</label>
+                <textarea id="cMessage" name="message" required></textarea>
+                <div class="error" aria-live="polite"></div>
+              </div>
+
+              <button class="btn btn-primary" type="submit">Send message</button>
+
+              <p class="help">
+                To enable “send emails directly from the website”, configure EmailJS keys (instructions below).
+                Without keys, a fallback mailto link will open.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0;">© <span id="year"></span> WanderLux Travel Agency.</p>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK (required for direct sending without backend) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/forms.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

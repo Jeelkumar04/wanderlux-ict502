@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Learn about WanderLux Travel Agency, our mission, and our travel consultants." />
+  <title>WanderLux | About Us</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>WanderLux</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navLinks">Menu</button>
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="services.html">Destinations/Services</a>
+          <a href="calculator.html">Trip Cost Calculator</a>
+          <a href="appointment.html">Appointment Request</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal" style="margin:0 0 8px;">About WanderLux</h1>
+        <p class="lead reveal">
+          WanderLux is a travel planning agency focused on personalised service, transparent estimates, and memorable experiences.
+        </p>
+
+        <div class="grid grid-2">
+          <div class="card reveal">
+            <h2 style="margin-top:0;">Our mission</h2>
+            <p>
+              We help travellers plan stress-free holidays through expert guidance, curated packages, and clear pricing estimates.
+              Our goal is to combine convenience with customisation—so every trip matches your style and budget.
+            </p>
+            <h3>Customer service values</h3>
+            <ul class="list">
+              <li>Transparency and clarity</li>
+              <li>Accessibility and inclusivity</li>
+              <li>Reliable partners and experiences</li>
+              <li>Responsive support</li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h2 style="margin-top:0;">Travel consultants</h2>
+            <div class="grid">
+              <div class="card reveal">
+                <h3>Amina — Asia & wellness</h3>
+                <p>Focus: Bali, Japan, boutique stays, cultural experiences.</p>
+                <p class="help">Photo: <em>assets/team1.jpg</em> (add your own image).</p>
+              </div>
+              <div class="card reveal">
+                <h3>Daniel — Europe & rail</h3>
+                <p>Focus: Paris, Alps, scenic rail itineraries, museums & food tours.</p>
+                <p class="help">Photo: <em>assets/team2.jpg</em> (add your own image).</p>
+              </div>
+            </div>
+
+            <div style="margin-top:14px;">
+              <a class="btn btn-primary" href="appointment.html">Book a consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0;">© <span id="year"></span> WanderLux Travel Agency.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

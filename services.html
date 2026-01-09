@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="WanderLux services: holiday packages, guided tours, flights & hotels, honeymoon specials and more." />
+  <title>WanderLux | Destinations & Services</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>WanderLux</span>
+        </a>
+        <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="navLinks">Menu</button>
+        <div class="nav-links" id="navLinks" data-nav-links>
+          <a href="index.html">Home</a>
+          <a href="services.html">Destinations/Services</a>
+          <a href="calculator.html">Trip Cost Calculator</a>
+          <a href="appointment.html">Appointment Request</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal" style="margin:0 0 8px;">Destinations & Services</h1>
+        <p class="lead reveal">
+          Choose from our most popular options—or request a fully customised itinerary with a consultant.
+        </p>
+
+        <div class="grid grid-2">
+          <article class="card reveal">
+            <h2 style="margin-top:0;">Services</h2>
+            <div class="grid grid-2">
+              <div class="card reveal">
+                <h3>Holiday Packages</h3>
+                <p>Flexible packages for families, couples, and solo travellers.</p>
+                <span class="tag">Customisable</span>
+              </div>
+              <div class="card reveal">
+                <h3>Guided Tours</h3>
+                <p>Small group, local guides, curated experiences.</p>
+                <span class="tag">Expert-led</span>
+              </div>
+              <div class="card reveal">
+                <h3>Flights & Hotels</h3>
+                <p>Bundle deals and value comparisons for convenience.</p>
+                <span class="tag">Smart bundling</span>
+              </div>
+              <div class="card reveal">
+                <h3>Honeymoon Specials</h3>
+                <p>Romantic destinations, premium stays, private tours.</p>
+                <span class="tag">Luxury-ready</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <h2 style="margin-top:0;">Popular destinations</h2>
+            <p class="help">Use our calculator to estimate costs for these destinations.</p>
+            <div class="grid">
+              <div class="card reveal">
+                <h3>Bali</h3>
+                <p>Wellness retreats, beaches, and cultural escapes.</p>
+              </div>
+              <div class="card reveal">
+                <h3>Tokyo</h3>
+                <p>City adventures, food tours, and day trips by rail.</p>
+              </div>
+              <div class="card reveal">
+                <h3>Paris</h3>
+                <p>Iconic sights, museums, and romantic getaways.</p>
+              </div>
+              <div class="card reveal">
+                <h3>Dubai</h3>
+                <p>Luxury shopping, desert experiences, modern attractions.</p>
+              </div>
+              <div class="card reveal">
+                <h3>Auckland</h3>
+                <p>Nature, city stays, and New Zealand road-trip starts.</p>
+              </div>
+            </div>
+
+            <div style="margin-top:14px;">
+              <a class="btn btn-primary" href="calculator.html">Open Trip Cost Calculator</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p style="margin:0;">© <span id="year"></span> WanderLux Travel Agency.</p>
+    </div>
+  </footer>
+
+ <script src="./js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
